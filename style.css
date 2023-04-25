@@ -1,0 +1,107 @@
+/*{social networks*/
+
+
+/*@media screen  and (max-width: 550px){
+        .icon-bar{
+            display: none;
+        }
+    }*/
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 100;
+    margin: -16px;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+    box-shadow: white 0 0 15px 5px;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.google {
+    background: #dd4b39;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+/*social networks}*/
+
+
+/*{footer*/
+
+.fa-facebook:hover {
+    color: rgb(1, 1, 168);
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 174, 255);
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.fa-google:hover {
+    color: rgb(0, 175, 29);
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.fa-whatsapp:hover {
+    color: rgb(62, 255, 44);
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.fa-instagram:hover {
+    color: yellow;
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.fa-youtube:hover {
+    color: red;
+    cursor: pointer;
+    text-shadow: rgb(0, 0, 0) 0 0 15px;
+}
+
+.facebook {
+    border-radius: 0 7px 0 0;
+}
+
+.youtube {
+    border-radius: 0 0 7px 0;
+}

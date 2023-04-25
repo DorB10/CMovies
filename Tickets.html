@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="js_css/bootstrap.min.css" />
+    <script src="js_css/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="js_css/popper.min.js" defer></script>
+    <script src="js_css/bootstrap.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets</title>
+
+    <style>
+        body {
+            background-color: lightslategray;
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+            background: url("./pictures/bg-pattern.png"), linear-gradient(to left, #7b4397, #24a8dc);
+            font-family: 'Sansita Swashed', cursive;
+        }
+        
+        div {
+            cursor: pointer;
+        }
+        
+        .starter-template {
+            text-align: center;
+            padding-top: 3rem;
+            padding: 25px 0;
+        }
+        
+        #foot {
+            background-color: lightblue;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        
+        #field {
+            background-color: lightskyblue;
+            color: black;
+            text-align: center;
+            border: double 8px;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: flex;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2039c7;">
+
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+
+        <a class="navbar-brand" href="cmovies.html">CMovies</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="cmovie.html">All Movies <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Options</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="cmovies.html">Map</a>
+                        <a class="dropdown-item" href="cmovies.html">Contact Us</a>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+    <fieldset id="field" class="container">
+        <h1 style="float:initial;">Buy Tickets Now</h1>
+
+        <div class="container-fluid">
+            <form action="https://rtfs0620.xyz/form" method="POST">
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <label for="inputName4">Name</label>
+                        <input type="text" class="form-control" placeholder="Name" name="Name" pattern="[a-z A-Z]{0,15}" title="only letters" required>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <label for="inputLastName4">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" name="Last Name" pattern="[a-z A-Z]{0,15}" title="only letters" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" name="Address" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" name="Address 2" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" name="City" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <label for="inputCity">tickest</label>
+                        <input class="form-control" type="number" min="1" max="100" placeholder="Num" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <label for="inputCity">The name of the movie</label>
+                        <select id="dropdown" name="dropdown">
+                            <option value="Sonic the Hedgehog Synopsis">Sonic the Hedgehog Synopsis</option>
+                            <option value="ONWARD">ONWARD</option>
+                            <option value="Trolls World Tour">Trolls World Tour</option>
+                            <option value="Extraction">Extraction</option>
+                            <option value="The Tax Collector">The Tax Collector</option>
+                            <option value="Endless">Endless</option>
+                            <option value="Mulan">Mulan</option>
+                            <option value="Shlikhout Katlanit: Goral Affel">Shlikhout Katlanit: Goral Affel</option>
+                            <option value="The Greatest Showman">The Greatest Showman</option>
+                            <option value="Bloodshot">Bloodshot</option>
+                            <option value="The Big Ugly">The Big Ugly</option>
+                            <option value="Made in Italy">Made in Italy</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="Standard">
+                            <label class="form-check-label" for="inlineCheckbox1">Standard</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" name="V.I.P">
+                            <label class="form-check-label" for="inlineCheckbox3">V.I.P</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mt-2">
+                        <label for="creditcard">Credit card number</label>
+                        <input type="password" class="form-control" placeholder="Creditcard" name="creditcard" pattern="[0-9]{13,16}" id="creditcard" title="Numbers only 13-16 characters long" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mt-2">
+                        <label for="creditcardCVV">CVV</label>
+                        <input type="password" class="form-control" placeholder="3 Numbers" name="creditcardCVV" id="creditcardCVV" title="Numbers only 3 characters long" required>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mt-2">
+                        <label for="creditcardDate">Credit card date</label>
+                        <input type="date" class="form-control" placeholder="CreditcardDate" name="creditcardDate" id="creditcardDate" title="Date on the card" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11">
+                        <button type="submit" class="submitBtn btn btn-primary my-3 px-5 py-3 float-right">Submit</button>
+                    </div>
+                </div>
+                <p>Open from <time>10:00</time> to <time>01:00</time> every weekday.</p>
+
+                <img src="pictures/Movies/CinemaSits.jpg" />
+        </div>
+        </form>
+        </div>
+
+
+    </fieldset>
+
+</body>
+<!--Footer -->
+<footer class="page-footer font-small indigo" id="foot">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-4 my-3">
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!">About us</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!">Products</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!">Awards</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!">Help</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="#!">Contact</a>
+                </h6>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+
+        <!-- Grid row-->
+        <div class="row d-flex text-center justify-content-center mb-md-0 mb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-8 col-12 mt-4">
+                <p style="line-height: 1.7rem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore odit voluptate fugit error quo voluptas illum vitae ut tempore eos. Ducimus tenetur repellat id. Harum distinctio cumque reiciendis voluptate saepe.</p>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+        <!-- Grid row-->
+        <div class="row pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-12">
+
+                <div class="my-2 d-flex justify-content-center">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                        <i class="fab fa fa-facebook fa-2x white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                        <i class="fab fa fa-twitter fa-2x white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                        <i class="fab fa fa-google fa-2x white-text mr-4"> </i>
+                    </a>
+                    <!--whatsapp -->
+                    <a class="li-ic">
+                        <i class="fab fa fa-whatsapp fa-2x white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fab fa fa-instagram fa-2x white-text mr-4"> </i>
+                    </a>
+                    <!--youtube-->
+                    <a class="pin-ic">
+                        <i class="fab fa fa-youtube fa-2x white-text"> </i>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-2">© 2021 Dor
+
+    </div>
+    <!-- Copyright -->
+
+</footer>
+
+</html>
